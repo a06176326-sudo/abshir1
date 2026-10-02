@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Department of IT</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    nav a { margin: 0 10px; text-decoration: none; color: blue; }
+    form { margin-top: 20px; }
+    form input, form textarea { display: block; margin: 10px 0; width: 300px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>You can reach the Department of Information Technology using the details below:</p>
+    <p>Email: <a href="mailto:abshir@example.com">abshir@example.com</a></p>
+    <p>Phone: +254 7XX XXX XXX</p>
+
+    <h2>Student Enquiry Form</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of Information Technology, KCA University</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Department of Information Technology</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    header, nav, main, footer { padding: 10px; }
+    nav a { margin: 0 10px; text-decoration: none; color: blue; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; }
+    table, th, td { border: 1px solid black; padding: 8px; }
+    form { margin-top: 20px; }
+    form input, form textarea { display: block; margin: 10px 0; width: 300px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Department of Information Technology</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>The Department of Information Technology provides quality education and training in computing, networking, and software development.</p>
+    </section>
+
+    <section>
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Database Systems</li>
+        <li>Computer Networks</li>
+        <li>Software Engineering</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>IT Laboratory</h2>
+      <img src="images/JPEG.jpeg" alt="IT Laboratory" width="600">
+    </section>
+
+    <section>
+      <h2>Course Table</h2>
+      <table>
+        <tr><th>Course Code</th><th>Course Name</th></tr>
+        <tr><td>IT101</td><td>Web Development</td></tr>
+        <tr><td>IT102</td><td>Database Systems</td></tr>
+        <tr><td>IT103</td><td>Computer Networks</td></tr>
+        <tr><td>IT104</td><td>Software Engineering</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Student Enquiry Form</h2>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of Information Technology, KCA University</p>
+  </footer>
+</body>
+</html>
